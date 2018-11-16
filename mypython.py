@@ -1,5 +1,13 @@
 #!/usr/bin/python
 """
+ Name: Jose-Antonio D. Rubio
+ OSUID: 932962915
+ Class: 344-400
+ Description
+ 	Small python program that will generate three files, write 10 random lowercase characters to them and
+ 	then writes them to standard out. 
+ 	Also generates two random integers between 1-42 (inclusive) and sums them.  Prints out both
+ 	numbers and the sum
  Reference
 	https://www.guru99.com/reading-and-writing-files-in-python.html
 """
@@ -33,9 +41,19 @@ def fileWriteRandom(file_name) :
 	file_name.close()
 	return
 
+"""
+ NAME
+    numberOperations
+ DESCRIPTION
+    generates two random numbers ranging from 1-42 inclusive
+    sums them
+    prints out each number and the sum
+ REFERENCE
+ 	generate random number: https://www.pythoncentral.io/how-to-generate-a-random-number-in-python/
+"""
 def numberOperations() :
-	rando1 = random.randint(1,43)
-	rando2 = random.randint(1,43)
+	rando1 = random.randint(1,42)
+	rando2 = random.randint(1,42)
 
 	rando_sum = rando1+rando2
 
